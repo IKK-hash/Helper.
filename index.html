@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Rekap Gaji Karyawan 2025</title>
+
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+      background-image: url("https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2015");
+      background-size: cover;
+      background-position: center;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+      background-color: rgba(255, 255, 255, 0.8);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #eaeaea;
+    }
+
+    input[type="number"], input[type="text"], input[type="date"] {
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+      padding: 4px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 8px 16px;
+      font-size: 14px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .btn-aksi {
+      padding: 5px 10px;
+      margin: 2px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .btn-edit {
+      background-color: #2196F3;
+      color: white;
+    }
+
+    .btn-hapus {
+      background-color: #f44336;
+      color: white;
+    }
+
+    .btn-edit:hover { background-color: #0b7dda; }
+    .btn-hapus:hover { background-color: #da190b; }
+
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 13px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Rekap Gaji Karyawan HELPER NOVEMBER-DESEMBER 2025</h2>
+
+<table id="tabelGaji">
+  <thead>
+    <tr>
+      <th>No</th>
+      <th>Tgl masuk</th>
+      <th>Hari,tgl</th>
+      <th>Nama</th>
+      <th>NIK</th>
+      <th>Bagian</th>
+      <th>Gaji/Hari (Rp)</th>
+      <th>Total Hari</th>
+      <th>Total Gaji</th>
+      <th>Lembur (Rp)</th>
+      <th>Jam Lembur</th>
+      <th>Total Lembur</th>
+      <th>Grand Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Contoh beberapa baris -->
+    <tr><td>1</td><td>7/8/2025</td><td><input type="text" class="hari"></td><td>FITRI HANDAYANI</td><td>202508001</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>2</td><td>14/8/2025</td><td><input type="text" class="hari"></td><td>YAYIN INTIYAS</td><td>202508010</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>3</td><td>18/8/2025</td><td><input type="text" class="hari"></td><td>DINA MARLINA</td><td>202508072</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>4</td><td>18/8/2025</td><td><input type="text" class="hari"></td><td>WATINI</td><td>202508075</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>5</td><td>18/8/2025</td><td><input type="text" class="hari"></td><td>VIKA MEILIA PUTRI</td><td>202508076</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>6</td><td>21/8/2025</td><td><input type="text" class="hari"></td><td>SITI AMINAH AMELIA</td><td>202508090</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>7</td><td>21/8/2025</td><td><input type="text" class="hari"></td><td>ABELIA NUR AZAHRA</td><td>202508091</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>8</td><td>21/8/2025</td><td><input type="text" class="hari"></td><td>RIKA JULITA</td><td>202508100</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>9</td><td>21/8/2025</td><td><input type="text" class="hari"></td><td>RITA HERAWATI</td><td>202508018</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>10</td><td>22/8/2025</td><td><input type="text" class="hari"></td><td>KOMARIAH</td><td>202508107</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>11</td><td>25/8/2025</td><td><input type="text" class="hari"></td><td>VERLITA APRILIA</td><td>202508141</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>12</td><td>25/8/2025</td><td><input type="text" class="hari"></td><td>SITI JULAEHA</td><td>202508144</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>13</td><td>25/8/2025</td><td><input type="text" class="hari"></td><td>RATI NINGSIIH</td><td>202508145</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>14</td><td>25/8/2025</td><td><input type="text" class="hari"></td><td>NOVI SAFITRIYANI</td><td>202508154</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>15</td><td>27/8/2025</td><td><input type="text" class="hari"></td><td>SITI KOMSIAH</td><td>202508162</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>16</td><td>27/8/2025</td><td><input type="text" class="hari"></td><td>CHAISYA SALSABELA</td><td>202508163</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>17</td><td>27/8/2025</td><td><input type="text" class="hari"></td><td>KHOIRUN NISA SARI</td><td>202508164</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>18</td><td>28/8/2025</td><td><input type="text" class="hari"></td><td>AYUNI SARA</td><td>202508170</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>19</td><td>29/8/2025</td><td><input type="text" class="hari"></td><td>ROSFITA NINGRUM</td><td>202508175</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>20</td><td>15/8/2025</td><td><input type="text" class="hari"></td><td>AYU INDAH</td><td>202508056</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>21</td><td>16/9/2025</td><td><input type="text" class="hari"></td><td>ANGGI LESTARI</td><td>202509016</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>22</td><td>16/9/2025</td><td><input type="text" class="hari"></td><td>CAHYATI</td><td>202509017</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>23</td><td>16/9/2025</td><td><input type="text" class="hari"></td><td>GLEDY ENJELICA R</td><td>202509019</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>24</td><td>16/9/2025</td><td><input type="text" class="hari"></td><td>HASANAH</td><td>202509020</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>25</td><td>17/9/2025</td><td><input type="text" class="hari"></td><td>SALSABILA AULIA</td><td>202509022</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>26</td><td>17/9/2025</td><td><input type="text" class="hari"></td><td>SRI AYU NINGSIH</td><td>202509023</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>27</td><td>17/9/2025</td><td><input type="text" class="hari"></td><td>SRI SUGIARTI</td><td>202509024</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>28</td><td>18/9/2025</td><td><input type="text" class="hari"></td><td>YUDI ADITYA</td><td>202509028</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>29</td><td>19/9/2025</td><td><input type="text" class="hari"></td><td>EVIYANA NURMALASARI</td><td>202509034</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>30</td><td>19/9/2025</td><td><input type="text" class="hari"></td><td>NOVITASARI</td><td>202509035</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>31</td><td>22/9/2025</td><td><input type="text" class="hari"></td><td>WARNIH</td><td>202509041</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>32</td><td>23/9/2025</td><td><input type="text" class="hari"></td><td>EUIS MASLINA</td><td>202508043</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>33</td><td>24/9/2025</td><td><input type="text" class="hari"></td><td>KASIH</td><td>202509048</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>34</td><td>24/9/2025</td><td><input type="text" class="hari"></td><td>WIWIN WINARSIH</td><td>202509049</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>35</td><td>2/10/2025</td><td><input type="text" class="hari"></td><td>SITI ASITOH</td><td>202510003</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>36</td><td>2/10/2025</td><td><input type="text" class="hari"></td><td>AMAH</td><td>202510004</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>37</td><td>2/10/2025</td><td><input type="text" class="hari"></td><td>ANNISA</td><td>202510005</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>38</td><td>6/10/2025</td><td><input type="text" class="hari"></td><td>FATMA MANDA PRATIWI</td><td>202510008</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>39</td><td>6/10/2025</td><td><input type="text" class="hari"></td><td>TUTI NUR ASTUTI</td><td>202510010</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>40</td><td>8/10/2025</td><td><input type="text" class="hari"></td><td>SITI AMINAH</td><td>202510018</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>41</td><td>13/10/2025</td><td><input type="text" class="hari"></td><td>SITI ROSANTI</td><td>202510022</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>42</td><td>22/10/2025</td><td><input type="text" class="hari"></td><td>RINA JULIANA</td><td>202510027</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>43</td><td>22/10/2025</td><td><input type="text" class="hari"></td><td>NOPAH KHOTIPAH</td><td>202510028</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>44</td><td>27/10/2025</td><td><input type="text" class="hari"></td><td>NUR HARDIANTI ABSARI</td><td>202511010</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>45</td><td>11/3/2025</td><td><input type="text" class="hari"></td><td>JULIA ARDILA</td><td>202511007</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>46</td><td>04/11/2025</td><td><input type="text" class="hari"></td><td>MUHAMMAD KHOIRUL ANWAR</td><td>202511011</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>47</td><td>05/11/2025</td><td><input type="text" class="hari"></td><td>ADELIA SARINA</td><td>202511012</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>48</td><td>06/11/2025</td><td><input type="text" class="hari"></td><td>RENDI SARIPUDIN</td><td>202511016</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>49</td><td>06/11/2025</td><td><input type="text" class="hari"></td><td>NOVA OKTAVIANI</td><td>202511014</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>50</td><td>06/11/2025</td><td><input type="text" class="hari"></td><td>SANTI</td><td>202511015</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>51</td><td>18/11/2025</td><td><input type="text" class="hari"></td><td>ABDIKA SINAGA</td><td>202511025</td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+<tr><td>52</td><td>20/11/2025</td><td><input type="text" class="hari"></td><td>MARDIANI</td><td></td><td>HELPER</td><td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td><td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td><td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+
+      <tfoot>
+    <tr>
+      <td colspan="12">Grand Total Keseluruhan</td>
+      <td id="grandTotalKeseluruhan">0</td>
+    </tr>
+  </tfoot>
+</table>
+<button class="btn-print" onclick="window.print()">🖨️ Cetak PDF</button>
+
+<script>
+// Fungsi hitung total gaji dan lembur
+function hitung() {
+  const rows = document.querySelectorAll("#tabelGaji tbody tr");
+  let totalSemua = 0;
+
+  rows.forEach(row => {
+    const gajiHari = parseFloat(row.querySelector(".gajiHari").value) || 0;
+    const totalHari = parseFloat(row.querySelector(".totalHari").value) || 0;
+    const lemburRp = parseFloat(row.querySelector(".lemburRp").value) || 0;
+    const jamLembur = parseFloat(row.querySelector(".jamLembur").value) || 0;
+
+    const totalGaji = gajiHari * totalHari;
+    const totalLembur = lemburRp * jamLembur;
+    const grandTotal = totalGaji + totalLembur;
+
+    row.querySelector(".totalGaji").textContent = totalGaji.toLocaleString("id-ID");
+    row.querySelector(".totalLembur").textContent = totalLembur.toLocaleString("id-ID");
+    row.querySelector(".grandTotal").textContent = grandTotal.toLocaleString("id-ID");
+
+    totalSemua += grandTotal;
+  });
+
+  document.getElementById("grandTotalKeseluruhan").textContent = totalSemua.toLocaleString("id-ID");
+}
+
+// Fungsi agar semua input "Hari" sama
+function sinkronHari() {
+  const semuaInputHari = document.querySelectorAll(".hari");
+  semuaInputHari.forEach(input => {
+    input.addEventListener("input", e => {
+      const nilai = e.target.value;
+      semuaInputHari.forEach(i => i.value = nilai);
+    });
+  });
+}
+
+
+
+// Jalankan fungsi-fungsi
+document.querySelectorAll("input").forEach(input => input.addEventListener("input", hitung));
+sinkronHari();
+</script>
+
+<script>
+function exportToExcel() {
+  const table = document.getElementById("tabelGaji").cloneNode(true);
+
+  // Ganti semua input dengan nilainya agar tampil di Excel
+  table.querySelectorAll("input").forEach(input => {
+    const td = input.parentElement;
+    td.textContent = input.value;
+  });
+
+  // Tambahkan total keseluruhan (grand total semua)
+  let totalSemua = 0;
+  table.querySelectorAll(".grandTotal").forEach(td => {
+    const val = parseFloat(td.textContent.replace(/[^\d.-]/g, "")) || 0;
+    totalSemua += val;
+  });
+
+  const tfoot = document.createElement("tfoot");
+  tfoot.innerHTML = `
+    <tr style="font-weight:bold; background:#f1f1f1;">
+      <td colspan="12" style="text-align:right;">TOTAL KESELURUHAN</td>
+      <td>${totalSemua.toLocaleString("id-ID")}</td>
+    </tr>`;
+  table.appendChild(tfoot);
+
+  // Gaya agar tampil bagus di Excel
+  const html = `
+  <html xmlns:x="urn:schemas-microsoft-com:office:excel">
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      table, th, td {
+        border: 1px solid #000;
+        border-collapse: collapse;
+        padding: 5px;
+        text-align: center;
+      }
+      th { background: #eaeaea; }
+      tfoot td { font-weight: bold; background: #f1f1f1; }
+    </style>
+  </head>
+  <body>
+    ${table.outerHTML}
+  </body>
+  </html>`;
+
+  // Buat file Excel dan unduh
+  const blob = new Blob([html], { type: "application/vnd.ms-excel;charset=utf-8;" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "Rekap_Gaji_Karyawan.xls";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
+</script>
+
+<!-- Tombol Ekspor -->
+<div style="margin-top:20px; text-align:center;">
+  <button onclick="exportToExcel()" style="padding:10px 20px; font-weight:bold;">Export ke Excel</button>
+</div>
+
+
+</body>
+</html>
